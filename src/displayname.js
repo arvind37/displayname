@@ -13,7 +13,7 @@ function DisplayName() {
 
   return (
     <div>
-      <h1>Enter Your Full Name</h1>
+      <h1>Full Name Display</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="firstName">
           First Name:
@@ -22,6 +22,7 @@ function DisplayName() {
             id="firstName"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
+            required
           />
         </label>
         <br />
@@ -32,6 +33,7 @@ function DisplayName() {
             id="lastName"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
+            required
           />
         </label>
         <br />
